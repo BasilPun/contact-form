@@ -130,3 +130,8 @@ main {
 textarea{
     resize: none;
 }
+
+#fname, #lname, #job-title, #company, #linkedin,
+#email, #met, #met-other{
+    width: 100%;
+}
