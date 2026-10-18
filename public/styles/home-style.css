@@ -4,16 +4,25 @@
 }
 
 body{
-    background-color: #f7fffa;
+    background-color: var(--grey);
 }
 
-/* #2a4466, #f7fffa, #6cc4cc, #4394bf, #3d5ea1 */
+:root{
+    --white: #ffffff;
+    --lildarkerwhite: #f4f6f8;
+    --grey: #d9dee3;
+    --systemgrey: #8b97a3;
+    --darkblue: #1f2933;
+}
+
+/* #ffffff #f4f6f8 #d9dee3 #8b97a3 #1f2933 */
 main {
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 1rem 2rem 2.5rem 2rem;
-    border: 1px solid black;
-    background-color:#6cc4cc;
+    border: 0.5px solid var(--darkblue);
+    background-color: var(--lildarkerwhite);
+    border-radius: 1rem;
 }
 
 #contact-form {
@@ -60,7 +69,6 @@ main {
 
 #metbox {
     grid-area: metbox;
-    display: flex;
 }
 
 #message-box {
@@ -86,4 +94,39 @@ main {
 
 .err{
     display: none;
+}
+
+#submit-button{
+    border: none;
+    background-color: var(--darkblue);
+    border-color: var(--darkblue);
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+#email-format{
+    border: none;
+}
+
+#metbox{
+    display: grid;
+    grid-template-areas: "metbox-met 1fr metbox-other";
+}
+
+#metbox-met{
+    grid-area: metbox-met;
+    display: flex;
+    flex-direction: column;
+}
+
+#metbox-other{
+    grid-area: metbox-other;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    resize: none;
 }
