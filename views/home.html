@@ -5,51 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="icon" href="../images/wave.png">
+    <link rel = "stylesheet" href = "../styles/home-style.css">
 </head>
 <body>
     <main>
-        <h1>Contact Form</h1>
         <form id="contact-form">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname">
-            <span class="err" id="err-fname">First name is required</span>
+            <h1 id = "contact-form-header">Contact Form</h1>
+            <div id = "fname-container">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname">
+                <span class="err" id="err-fname">First name is required</span>
+            </div>
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname">
-            <span class="err" id="err-lname">Last name is required</span>
+            <div id = "lname-container">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname">
+                <span class="err" id="err-lname">Last name is required</span>
+            </div>
 
-            <label for="job-title">Job Title</label>
-            <input type="text" id="job-title" name="job-title">
+            <div id = "job-title-container">
+                <label for="job-title">Job Title</label>
+                <input type="text" id="job-title" name="job-title">
+            </div>
 
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company">
+            <div id = "company-container">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+            </div>
 
-            <label for="linkedin">LinkedIn URL</label>
-            <input type="url" id="linkedin" name="linkedin">
+            <div id = "linkedin-container">
+                <label for="linkedin">LinkedIn URL</label>
+                <input type="url" id="linkedin" name="linkedin">
+            </div>
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email">
+            <div id = "email-container">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+            </div>
 
-            <label for="met">How did we meet?</label>
-            <select id="met" name="met">
-                <option value="none">Please Select</option>
-                <option value="school">School</option>
-                <option value="work">Work</option>
-                <option value="other">Other</option>
-            </select>
+            <div id = "metbox">
+                <label for="met">How did we meet?</label>
+                <select id="met" name="met">
+                    <option value="none">Please Select</option>
+                    <option value="school">School</option>
+                    <option value="work">Work</option>
+                    <option value="other">Other</option>
+                </select>
 
-            <label for="met-other">Other (Please Specify)</label>
-            <input type="text" id="met-other" name="met-other">
+                <label for="met-other">Other (Please Specify)</label>
+                <input type="text" id="met-other" name="met-other">
+            </div>
+            
+            <div id = "message-box">
+                <label for="message">Message</label>
+                <textarea rows="5" id="message" name="message"></textarea>
+            </div>
 
-            <label for="message">Message</label>
-            <textarea rows="5" id="message" name="message"></textarea>
+            <div id = "mailing-list-box">
+                <label for="mailing-list">
+                    <input type="checkbox" id="mailing-list" name="mailing-list" value="yes">
+                    Add me to your mailing list?
+                </label>
+            </div>
 
-            <label for="mailing-list">
-                <input type="checkbox" id="mailing-list" name="mailing-list" value="yes">
-                Add me to your mailing list?
-            </label>
-
-            <fieldset>
+            <fieldset id = "email-format">
                 <legend>Choose an email format:</legend>
 
                 <label for="format-html">

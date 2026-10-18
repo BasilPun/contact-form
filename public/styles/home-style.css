@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f7fffa;
+}
+
+/* #2a4466, #f7fffa, #6cc4cc, #4394bf, #3d5ea1 */
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 2rem 2.5rem 2rem;
+    border: 1px solid black;
+    background-color:#6cc4cc;
+}
+
+#contact-form {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "header header header"
+        "fname lname job-title"
+        "company linkedin email"
+        "metbox metbox metbox"
+        "message message message"
+        "mailing-list mailing-list mailing-list"
+        "email-format email-format email-format"
+        "submit submit submit";
+}
+
+#contact-form-header{
+    grid-area: header;
+}
+
+#fname-container {
+    grid-area: fname;
+}
+
+#lname-container {
+    grid-area: lname;
+}
+
+#job-title-container {
+    grid-area: job-title;
+}
+
+#company-container {
+    grid-area: company;
+}
+
+#linkedin-container {
+    grid-area: linkedin;
+}
+
+#email-container {
+    grid-area: email;
+}
+
+#metbox {
+    grid-area: metbox;
+    display: flex;
+}
+
+#message-box {
+    grid-area: message;
+}
+
+#message {
+    grid-area: message;
+    width: 100%;
+}
+
+#mailing-list-box {
+    grid-area: mailing-list;
+}
+
+#email-format {
+    grid-area: email-format;
+}
+
+#submit-button {
+    grid-area: submit;
+}
+
+.err{
+    display: none;
+}
