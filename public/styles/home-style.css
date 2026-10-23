@@ -93,6 +93,7 @@ main {
 }
 
 .err{
+    color: red;
     display: none;
 }
 
@@ -108,11 +109,14 @@ main {
 
 #email-format{
     border: none;
+    display: none;
 }
 
 #metbox{
     display: grid;
-    grid-template-areas: "metbox-met 1fr metbox-other";
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "metbox-met metbox-other metbox-other";
 }
 
 #metbox-met{
@@ -125,6 +129,7 @@ main {
     grid-area: metbox-other;
     display: flex;
     flex-direction: column;
+    display: none;
 }
 
 textarea{
