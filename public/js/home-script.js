@@ -59,7 +59,9 @@ document.querySelector('#contact-form').onsubmit = () =>{
     let metOther = document.querySelector("#met-other").value.trim();
 
     if (metValue != "none") {
-        metProvided = true;
+        if (metValue != "other"){
+            metProvided = true;
+        }
     }
 
     if (metOther != ""){
