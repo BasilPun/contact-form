@@ -23,9 +23,16 @@
         </div>
         <div id = "specifics">
             <h2>Specifics</h2>
-            <p>How did we meet?: <%= data_input['met'] %></p>
+            <%if (data_input['met'] == "other"){ %>
+                <p>How did we meet?: <%= data_input['met-other'] %></p>
+            <%}else{%>
+                <p>How did we meet?: <%= data_input['met'] %></p>
+            <%}%>
             <p>Message: <%= data_input['message']%></p>
             <p>Add me to your mailing list?: <%= data_input['mailing-list'] %></p>
+            <%if (data_input['mailing-list'] == "yes"){ %>
+                <p>Email-format selected: <%= data_input['email-format'] %></p>
+            <%}%>
             <p>Data created at: <%= data_input['timestamp'].toLocaleString()%></p>
         </div>
 

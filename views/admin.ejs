@@ -41,8 +41,11 @@
                         <td><%= data_input['company'] %></td>
                         <td><%= data_input['linkedin'] %></td>
                         <td><%= data_input['email'] %></td>
-                        <td><%= data_input['met'] %></td>
-                        <!-- <td><%= data_input['met-other'] %></td> -->
+                        <%if (data_input['met'] == "other"){%>
+                            <td><%= data_input['met-other'] %></td>
+                        <%}else{%>
+                            <td><%= data_input['met'] %></td>
+                        <%}%>
                         <td><%= data_input['message'] %></td>
                         <td><%= data_input['mailing-list'] %></td>
                         <td><%= data_input['email-format'] %></td>
