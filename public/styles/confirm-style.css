@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --white: #ffffff;
+    --lildarkerwhite: #f4f6f8;
+    --grey: #d9dee3;
+    --systemgrey: #8b97a3;
+    --darkblue: #1f2933;
+}
+
+main{
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem 2rem 2.5rem 2rem;
+    border: 0.5px solid var(--darkblue);
+    background-color: var(--lildarkerwhite);
+    border-radius: 1rem;
+
+    display:grid;
+    grid-template-areas: 
+    "header"
+    "general-info"
+    "specifics"
+    "button-box";
+    gap: 1rem;
+}
+
+#back{
+    border: none;
+    background-color: var(--darkblue);
+    border-color: var(--darkblue);
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    color: var(--white);
+}

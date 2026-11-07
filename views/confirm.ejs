@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "/styles/confirm-style.css">
-    <title>confirm</title>
+    <title>Contact B</title>
+    <link rel="icon" href="/images/wave.png?v=2">
 </head>
 <body>
-    
+    <main>
+        <div id = "header">
+            <h1>Contact Information has been sent!</h1>
+            <p>Summary of information posted</p>
+        </div>
+        <div id = "general-info">
+            <h2>General Info</h2>
+            <p>Name: <%= data_input['fname'] + ' ' + data_input['lname'] %></p>
+            <p>Job title: <%= data_input['job-title'] %></p>
+            <p>Company: <%= data_input['company'] %></p>
+            <p>LinkedIn URL: <%= data_input['linkedin'] %></p>
+            <p>Email Address: <%= data_input['email'] %></p>
+        </div>
+        <div id = "specifics">
+            <h2>Specifics</h2>
+            <p>How did we meet?: <%= data_input['met'] %></p>
+            <p>Message: <%= data_input['message']%></p>
+            <p>Add me to your mailing list?: <%= data_input['mailing-list'] %></p>
+            <p>Data created at: <%= data_input['timestamp'].toLocaleString()%></p>
+        </div>
+
+         <div id = "button-box">
+            <a href = "/">
+                <button id = "back">Make another submission</button>
+            </a>
+        </div>
+    </main>
 </body>
 </html>

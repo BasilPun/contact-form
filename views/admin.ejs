@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include('partials/head', { pageTitle: 'Manage Jobs' }) %>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact B</title>
+    <link rel="icon" href="/images/wave.png?v=2">
     <!-- 2 libraries, jquery has to come first -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/3.1.4/js/dataTables.min.js"></script>
@@ -13,7 +15,7 @@
 </head>
 <body>
     <main>
-        <h1>Jobs</h1>
+        <h1>Data Inputs</h1>
         <table id = "admin-table" class = "display">
             <thead>
                 <tr>
@@ -40,7 +42,7 @@
                         <td><%= data_input['linkedin'] %></td>
                         <td><%= data_input['email'] %></td>
                         <td><%= data_input['met'] %></td>
-                        <td><%= data_input['met-other'] %></td>
+                        <!-- <td><%= data_input['met-other'] %></td> -->
                         <td><%= data_input['message'] %></td>
                         <td><%= data_input['mailing-list'] %></td>
                         <td><%= data_input['email-format'] %></td>
