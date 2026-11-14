@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B's Resume</title>
+    <link rel="icon" href="/images/resumeImages/resume-favicon.png">
+    <link rel = "stylesheet" href = "/styles/resume-styles.css">
+</head>
+<body>
+
+    <%- include('partials/navbar') %>
+
+    <main>
+        <div id = "header" class = "section">
+            <div id = "seperator">
+                <h1>Basil Paija Pun</h1>
+                <img src = "/images/resumeImages/profile-pic.png" alt = "A pic of Basil" id = "profile-pic">
+            </div>
+            <p>(253) 308-9596 | <a href="mailto:paijapun.basil@gmail.com">PaijaPun.Basil@gmail.com</a> | <a href = "https://www.linkedin.com/in/basil-paija-pun/">www.linkedin.com/in/basilpaija-pun</a></p>
+        </div>
+
+        <div id = "technical-skills" class = "section">
+            <h2>Technical Skills</h2>
+            <hr>
+            <ul>
+                <li><span class = "highlight">Languages</span>: Java, Python, C++, HTML/CSS, SQL, JS, PHP, MATLAB</li>
+                <li><span class = "highlight">Frameworks & Tools</span>: React, Pygame, Git, MySQL, MediaPipe, YOLOv8, NumPy </li>
+            </ul>
+        </div>
+        <div id = "education" class = "section">
+            <h2>Education & Certifications</h2>
+            <hr>
+            <div class = "side-text-container">
+                <h3 class = "first-child"><span class = "company">Green River College</span>, Auburn, Washington</h3>
+                <span class = "dates first-child">March 2023 - June 2028</span>
+            </div>
+            <p>Bachelor's in Software Development GPA:3.90</p>
+            <div class = "side-text-container">
+                <h3><span class = "company">AWS Cloud Practitioner</span></h3>
+                <span class = "dates">Earned August 2026</span>
+            </div>
+            <p>Currently pursuing AWS Solutions Architect - Associate</p>
+        </div>
+
+        <div id = "work-experience" class = "section">
+            <h2>Highlighted Work Experience</h2>
+            <hr>
+            <div class = "side-text-container">
+                <h3 class = "first-child"><span class = "company">Green River College</span>, <span class = "role">Full Stack Website Development Intern</span> Auburn, Washington</h3>
+                <span class = "dates first-child">August 2026 - Current</span>
+            </div>
+                <ul>
+                    <li>Collaborated with the development team to update and uphold current web applications being used by GRC.</li>
+                    <li>Designed a solution for GRC's scheduling system to support hybrid course scheduling.</li>
+                </ul>
+            <div class = "side-text-container">
+                <h3><span class = "company">AI & Robotics Academy</span>, <span class = "role">Lead Robotics & Coding Instructor</span> Bellevue, Washington</h3>
+                <span class = "dates">Mar 2025 - Feb 2026</span>
+            </div>
+                <ul>
+                    <li>Delivered hands-on robotics and coding instructions to students of ages 4-12.</li>
+                    <li>Guided students in building sensor-based robots, emphasizing design thinking, iteration, and problem solving.</li>
+                    <li>Developed course materials, including lesson plans, slide decks, and interactive challenges, and onboarded and trained new instructors across multiple programs.</li>
+                </ul>
+            <div class = "side-text-container firs">
+                <h3><span class = "company">ICode</span>, <span class = "role">Coding Instructor</span> Bellevue, Washington</h3>
+                <span class = "dates">Sept 2025 - Feb 2026</span>
+            </div>
+                <ul>
+                    <li>Taught robotics and programming across web development, Scratch & Minecraft Education</li>
+                    <li>Guided students in building full-stack web applications, teaching client-server architecture and CRUD operations.</li>
+                </ul>
+            <div class = "side-text-container">
+                <h3><span class = "company">Data Automation Labs</span>, <span class = "role">Software Engineering Intern</span> Bellevue, Washington</h3>
+                <span class = "dates">May 2025 - July 2025</span>
+            </div>
+            <ul>
+                <li>Debugged local development and application startup issues involving configurations and project setup scripts.</li>
+                <li>Reported reproducible failures to the engineering team and supported troubleshooting across a Spring boot/JHipster codebase using Git and containerized workflows</li>
+            </ul>
+        </div>
+        <div id = "projects" class = "section">
+            <h2>Highlighted Projects</h2>
+            <hr>
+            <h3 class = "first-child"><span class = "project-name">QuackQuest</span>, <span class = "language">Python</span></h3>
+            <ul>
+                <li>Developed an endless-runner game with procedural terrain generation and physics-based movements for gravity, collisions and speed handling</li>
+                <li>Implemented custom sprite-sheet animations and chunk-based world generation for efficient rendering and memory usage, then deployed the game to the web using Pygbag.</li>
+            </ul>
+            <h3><span class = "project-name">Neural Network Classifier from scratch</span>, <span class = "language">Python</span></h3>
+            <ul>
+                <li>Implemented a neural network from scratch with dense layers, ReLU/ Softmax activators, cross-entropy loss, backpropagation & stochastic gradient descent without any machine learning frameworks.</li>
+                <li>Trained it on a 3-spiral classification dataset, and increased accuracy from ~37% to 98.7% over 10,000 iterations.</li>
+            </ul>
+            <h3><span class = "project-name">AI Chatbot</span>, <span class = "language">React</span></h3>
+            <ul id = "last-thing-on-page">
+                <li>Built a React chatbot that integrates the Gemini API for real-time AI responses.</li>
+                <li>Implemented persistent chat history with localStorage and automatic message scrolling for smoother user experience.</li>
+            </ul>
+
+        </div>
+    </main>
+</body>
+</html>

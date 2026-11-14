@@ -1,4 +1,4 @@
-ul{
+#partial-nav ul{
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -9,7 +9,7 @@ ul{
     width: 80%;
 }
 
-nav{
+#partial-nav{
     margin-top: 2rem;
     margin-bottom: 2.5rem;
 
@@ -18,16 +18,16 @@ nav{
     align-items: center;  
 }
 
-a {
+#partial-nav a {
     color: black;
     text-decoration: none;
 }
 
 /* royal blue on hover */
-a:hover {
+#partial-nav a:hover {
     color: 	#2563EB;
 }
 
-a{
+#partial-nav a{
     font-size: 1.5rem;
 }

@@ -10,7 +10,11 @@ app.set('view engine', 'ejs');
 const data_input_list = []
 
 app.get('/', (req, res) =>{
-    res.render('home');
+    res.render('resume');
+});
+
+app.get('/contact-form', (req, res) =>{
+    res.render('contact-form');
 });
 
 app.get('/admin', (req, res) =>{
