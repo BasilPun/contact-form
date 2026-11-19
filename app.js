@@ -7,7 +7,6 @@ const PORT = 3002;
 
 dotenv.config();
 app.use(express.static('public'));
-const data_input_list = []
 //create a connection pool
 const pool = mysql2.createPool({
     host: process.env.DB_HOST,
@@ -28,7 +27,9 @@ app.get('/contact-form', (req, res) =>{
     res.render('contact-form');
 });
 
-app.get('/admin', (req, res) =>{
+app.get('/admin', async(req, res) =>{
+
+    const [data_input_list] = await pool.query('SELECT * FROM contact_requests order by timestamp DESC');
     res.render('admin', {data_input_list});
 });
 
