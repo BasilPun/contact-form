@@ -45,13 +45,13 @@
                         <td><%= data_input['linkedin'] %></td>
                         <td><%= data_input['email'] %></td>
                         <%if (data_input['met'] == "other"){%>
-                            <td><%= data_input['met-other'] %></td>
+                            <td><%= data_input['met_other'] %></td>
                         <%}else{%>
                             <td><%= data_input['met'] %></td>
                         <%}%>
                         <td><%= data_input['message'] %></td>
-                        <td><%= data_input['mailing-list'] %></td>
-                        <td><%= data_input['email-format'] %></td>
+                        <td><%= data_input['mailing_list'] %></td>
+                        <td><%= data_input['email_format'] %></td>
                         <td><%= data_input['timestamp'].toLocaleString()%></td>
                     </tr>
                 <% }); %>
